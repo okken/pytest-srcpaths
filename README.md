@@ -1,4 +1,4 @@
-# pytest-path
+# pytest-srcpaths
 
 Add paths to `sys.path`.  
 A pytest plugin to help pytest find the code you want to test.
