@@ -19,7 +19,7 @@ It should contain a space seperated list of paths.
     [pytest]
     srcpaths = src lib
 
-Paths are relative to the directory that pytest.ini is in. 
+Paths are relative to the directory that pytest.ini is in.  
 You can include the top level directory with a dot.
 
     [pytest]
