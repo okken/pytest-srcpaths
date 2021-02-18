@@ -3,6 +3,7 @@ requires = ["flit_core >=2,<4"]
 build-backend = "flit_core.buildapi"
 
 [tool.flit.metadata]
+dist-name = "pytest-srcpaths"
 module = "pytest_srcpaths"
 author = "Brian Okken"
 author-email = "brian+pypi@pythontest.com"
