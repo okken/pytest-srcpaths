@@ -1,0 +1,15 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "pytest_srcpaths"
+author = "Brian Okken"
+author-email = "brian+pypi@pythontest.com"
+home-page = "https://github.com/okken/pytest-srcpaths"
+requires = ["pytest>=5.0.0"]
+classifiers = ["License :: OSI Approved :: MIT License"]
+description-file = "README.md"
+
+[tool.flit.entrypoints."pytest11"]
+srcpaths = "pytest_srcpaths"
