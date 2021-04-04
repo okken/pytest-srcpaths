@@ -14,7 +14,7 @@ Install with pip:
 ## Usage
 
 Add a line in your pytest.ini file with a key of `srcpaths`.
-It should contain a space seperated list of paths.
+It should contain a space-separated list of paths.
 
     [pytest]
     srcpaths = src lib
@@ -27,6 +27,4 @@ You can include the top level directory with a dot.
 
 ## Similar project
 
-This plugin was inspired by [pytest-pythonpath](https://pypi.org/project/pytest-pythonpath/).
-
-Implementation and scope are a bit different.
+This plugin was inspired by [pytest-pythonpath](https://pypi.org/project/pytest-pythonpath/) whose implementation and scope are a bit different.
