@@ -3,7 +3,7 @@ Add paths to sys.path
 """
 import sys
 
-__version__ = "1.0.2"
+__version__ = "1.0.6"
 
 def pytest_addoption(parser):
     parser.addini("srcpaths",

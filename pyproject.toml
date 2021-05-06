@@ -11,6 +11,7 @@ home-page = "https://github.com/okken/pytest-srcpaths"
 requires = ["pytest>=5.0.0"]
 classifiers = ["License :: OSI Approved :: MIT License"]
 description-file = "README.md"
+requires-python=">=3.7"
 
 [tool.flit.entrypoints."pytest11"]
 srcpaths = "pytest_srcpaths"
