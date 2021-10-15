@@ -1,5 +1,4 @@
 import sys
-from textwrap import dedent
 from typing import Generator
 from typing import List
 from typing import Optional
@@ -7,44 +6,6 @@ from typing import Optional
 import pytest
 from _pytest.pytester import Pytester
 
-
-@pytest.fixture()
-def file_structure(pytester: Pytester) -> None:
-    pytester.makepyfile(
-        test_foo="""
-        from foo import foo
-
-        def test_foo():
-            assert foo() == 1
-        """
-    )
-
-    pytester.makepyfile(
-        test_bar="""
-        from bar import bar
-
-        def test_bar():
-            assert bar() == 2
-        """
-    )
-
-    foo_py = pytester.mkdir("sub") / "foo.py"
-    content = dedent(
-        """
-        def foo():
-            return 1
-        """
-    )
-    foo_py.write_text(content, encoding="utf-8")
-
-    bar_py = pytester.mkdir("sub2") / "bar.py"
-    content = dedent(
-        """
-        def bar():
-            return 2
-        """
-    )
-    bar_py.write_text(content, encoding="utf-8")
 
 
 def test_one_dir(pytester: Pytester, file_structure) -> None:
@@ -137,3 +98,5 @@ def test_clean_up(pytester: Pytester) -> None:
     assert after is not None
     assert any("I_SHALL_BE_REMOVED" in entry for entry in before)
     assert not any("I_SHALL_BE_REMOVED" in entry for entry in after)
+
+
