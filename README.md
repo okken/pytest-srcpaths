@@ -32,7 +32,7 @@ The option `pythonpath` also works the same.
     [pytest]
     pythonpath = src lib
 
-pytest 7 (not released yet) is planned to include the `pythonpath` option. 
+pytest 7 includes the `pythonpath` option.
 
 For pytest 6.2.x, this plugin will work.
 
